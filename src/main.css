@@ -1,0 +1,500 @@
+body {
+    margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, p {font-family: Roboto,Helvetica,Arial,sans-serif; color: #333}
+
+h3 {line-height: 10px; color: #333}
+
+.icon{
+    color: #767777 !important;
+}
+
+::-moz-selection {
+    background-color: #6ab344;
+    color: #fff;
+}
+
+::selection {
+    background-color: #6ab344;
+    color: #fff;
+}
+
+.temagami-search-box .mdl-textfield__input {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.temagami-header .mdl-menu__container {
+    z-index: 1;
+    margin: 0 !important;
+}
+
+.mdl-textfield--expandable {
+    width: auto;
+}
+
+.temagami-mobile-title {
+    display: none !important;
+}
+
+.temagami-logo-image {
+    height: 28px;
+    width: 140px;
+}
+
+.temagami-header {
+    overflow: visible;
+    background-color: white;
+}
+
+.mdl-layout__header {
+    z-index: 3;
+}
+
+.temagami-header .material-icons {
+    color: #767777 !important;
+}
+
+.temagami-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+}
+
+.temagami-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.temagami-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.temagami-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 800px;
+}
+
+.temagami-search-box.is-focused + .temagami-navigation-container {
+    opacity: 0;
+    width: 100px;
+}
+
+.temagami-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+}
+
+.temagami-navigation .mdl-navigation__link:hover {
+    border-bottom: 4px solid #8bc34a;
+}
+
+.temagami-search-box {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.temagami-more-button {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+}
+
+.temagami-drawer {
+    border-right: none;
+}
+
+.temagami-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+}
+
+.temagami-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+}
+
+.temagami-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #8bc34a;
+}
+
+.temagami-drawer .mdl-layout-title {
+    position: relative;
+    background: #6ab344;
+    height: 160px;
+}
+
+.temagami-drawer .temagami-logo-image {
+    position: absolute;
+    bottom: 16px;
+}
+
+.temagami-modal-page {
+    display: none;
+    background-color: rgba(0,0,0,0.4);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 60;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.temagami-modal-dialog-register {
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 500px;
+    max-width: 740px;
+    margin: auto;
+}
+
+.temagami-modal-content {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.temagami-hero-section {
+    position: relative;
+    height: 440px;
+    width: auto;
+    background-color: #fafafa;
+    background-size: cover;
+}
+
+.logo-font {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: #767777;
+    font-weight: 500;
+}
+
+.temagami-slogan {
+    font-size: 60px;
+    padding-top: 160px;
+}
+
+.temagami-sub-slogan {
+    font-size: 21px;
+    padding-top: 24px;
+}
+
+.temagami-screen-section {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.temagami-screens {
+    text-align: right;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.temagami-screen {
+    text-align: center;
+}
+
+.temagami-screen .temagami-link {
+    margin-top: 16px;
+    display: block;
+    z-index: 2;
+}
+
+.temagami-image-link {
+    text-decoration: none;
+}
+
+.temagami-phone {
+    display: inline-block;
+    width: 64px;
+    margin-right: 48px;
+}
+
+.temagami-phone .temagami-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+
+.temagami-tablet {
+    display: inline-block;
+    width: 110px;
+    margin-right: 64px;
+}
+
+.temagami-tablet .temagami-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+.temagami-tablet .temagami-link {
+    display: block;
+    z-index: 2;
+}
+
+.temagami-tv {
+    display: inline-block;
+    width: 300px;
+    margin-right: 80px;
+}
+
+.temagami-tv .temagami-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+.temagami-auto {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+}
+
+.temagami-auto .temagami-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+}
+
+.temagami-link {
+    text-decoration: none;
+    color: #8bc34a !important;
+}
+
+.temagami-link:hover {
+    color: #7cb342 !important;
+}
+
+.temagami-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.temagami-alt-link {
+    text-decoration: none;
+    color: #64ffda !important;
+    font-size: 16px;
+}
+
+.temagami-alt-link:hover {
+    color: #00bfa5 !important;
+}
+
+.temagami-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.temagami-customized-section {
+    text-align: center;
+    height: 300px;
+}
+
+.temagami-customized-section-text {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 16px 0 16px;
+}
+
+.temagami-customized-section-text p {
+    padding-top: 16px;
+}
+
+.temagami-customized-section-image {
+    background: url('') center top no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.temagami-section {
+    padding: 40px 0;
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.temagami-section .temagami-section-title {
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.temagami-card-container {
+}
+
+.mdl-cell--3-col {
+    width: calc(33.3% - 16px)
+}
+
+.temagami-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+}
+
+.temagami-card-container .mdl-card__media img {
+    width: 100%;
+}
+
+.temagami-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+    color: #333;
+}
+
+.temagami-card-container .mdl-card__title-text {
+    color: #666;
+    height: auto;
+}
+
+.temagami-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+}
+
+.temagami-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+}
+
+.temagami-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+}
+
+.temagami-footer {
+    background-color: #fafafa;
+    position: relative;
+}
+
+.temagami-footer a:hover {
+    color: #8bc34a;
+}
+
+.temagami-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+}
+
+.temagami-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+}
+
+.temagami-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+}
+
+.temagami-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+}
+
+.temagami-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.temagami-link-menu:hover {
+    cursor: pointer;
+}
+
+/**** Form Components ****/
+
+.mdl-textfield-register {
+    width: 280px;
+    margin-right: 20px;
+}
+
+.mdl-margin_16px {
+    margin: 16px 0 16px 0;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+    .temagami-navigation-container {
+        display: none;
+    }
+
+    .temagami-title {
+        display: none !important;
+    }
+
+    .temagami-mobile-title {
+        display: block !important;
+        position: absolute;
+        left: calc(50% - 70px);
+        top: 12px;
+        transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+       consecutive "+" operators in some cases. Therefore, we need to use both
+       here to cover all the bases. */
+    .temagami.temagami-search-box.is-focused ~ .temagami-mobile-title,
+    .temagami-search-box.is-focused + .temagami-navigation-container + .temagami-mobile-title {
+        opacity: 0;
+    }
+
+    .temagami-more-button {
+        display: none;
+    }
+
+    .temagami-search-box.is-focused {
+        width: calc(100% - 48px);
+    }
+
+    .temagami-search-box .mdl-textfield__expandable-holder {
+        width: 100%;
+    }
+
+    .temagami-slogan {
+        font-size: 26px;
+        margin: 0 16px;
+        padding-top: 24px;
+    }
+
+    .temagami-sub-slogan {
+        font-size: 16px;
+        margin: 0 16px;
+        padding-top: 8px;
+    }
+
+    .temagami-footer .mdl-mega-footer--bottom-section {
+        display: none;
+    }
+}
